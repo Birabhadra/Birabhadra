@@ -1,6 +1,9 @@
 # 💫 About Me:
-🚀 I’m currently working on<br><br>Building scalable backend systems and AI-powered applications, including automation tools and real-world SaaS products.<br><br>🤝 I’m looking to collaborate on<br><br>AI projects, backend-heavy applications, startups, and innovative tools that solve real problems.<br><br>🛠️ I’m looking for help with<br><br>Scaling products, advanced system design, and connecting with founders/startups for real-world exposure.<br><br>🌱 I’m currently learning<br><br>Advanced backend architecture, AI integrations, system design, and building production-level applications.<br><br>💬 Ask me about<br><br>Backend development, APIs, AI tools, automation, or building projects from scratch.<br><br>⚡ Fun fact<br><br>I’ve solved 700+ LeetCode problems and love turning ideas into real, working products 🚀
+I am an AI/ML Engineer with hands-on experience in building intelligent systems using LLMs, AI agents, and scalable backend architectures. My work focuses on designing and deploying production-ready applications that combine machine learning with robust backend systems to solve real-world problems.
 
+I have practical experience integrating large language models into applications, developing agent-based workflows, and building APIs and services that support reliable, high-performance systems. I approach problems with a strong emphasis on system design, efficiency, and clean architecture, ensuring that solutions are both scalable and maintainable.
+
+I am particularly interested in developing end-to-end AI systems where intelligent decision-making, automation, and backend engineering come together to create impactful products.
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/birabhadra-sahoo) 
