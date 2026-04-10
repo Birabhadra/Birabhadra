@@ -1,0 +1,139 @@
+
+  <svg width="850" height="400" viewBox="0 0 850 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="core-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
+    </pattern>
+    <style>
+     /* Data Flowing through pipes */
+      @keyframes dataFlow {
+        to { stroke-dashoffset: -40; }
+      }
+      .flow-line {
+        stroke-dasharray: 6 8;
+        animation: dataFlow 1.5s linear infinite;
+      }
+      .flow-line-reverse {
+        stroke-dasharray: 6 8;
+        animation: dataFlow 1.5s linear infinite reverse;
+      }
+      /* Pulsing effects */
+      @keyframes pulse {
+        0%, 100% { opacity: 0.6; }
+        50% { opacity: 1; }
+      }
+      .status-pulse {
+        animation: pulse 2s ease-in-out infinite;
+        transform-origin: center;
+      }
+      /* Subtle floating for peripheral nodes */
+      @keyframes float1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes float2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(5px); }
+      }
+      .float-up { animation: float1 4s ease-in-out infinite; }
+      .float-down { animation: float2 5s ease-in-out infinite; }
+      /* Spinning core elements */
+      @keyframes spin {
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes spin-slow-reverse {
+        100% { transform: rotate(-360deg); }
+      }
+      .spin-ring {
+        animation: spin 8s linear infinite;
+      }
+      .spin-outer {
+        animation: spin-slow-reverse 15s linear infinite;
+      }
+    </style>
+  </defs>
+  <rect width="850" height="400" fill="url(#bg-grad)" rx="16"/>
+  <rect width="850" height="400" fill="url(#grid)" rx="16"/>
+  <circle cx="650" cy="200" r="150" fill="#38bdf8" opacity="0.05" filter="url(#core-glow)" />
+  <g transform="translate(630, 200)">
+    <path d="M 0 0 C -60 0, -80 -80, -140 -80" fill="none" stroke="#1e293b" stroke-width="3" />
+    <path d="M 0 0 C 60 0, 80 -80, 140 -80" fill="none" stroke="#1e293b" stroke-width="3" />
+   <path d="M 0 0 C -50 0, -60 90, -120 90" fill="none" stroke="#1e293b" stroke-width="3" />
+    <path d="M 0 0 C 50 0, 60 90, 120 90" fill="none" stroke="#1e293b" stroke-width="3" />
+    <path d="M 0 0 C -60 0, -80 -80, -140 -80" fill="none" stroke="#38bdf8" stroke-width="2" class="flow-line-reverse" opacity="0.8"/>
+    <path d="M 0 0 C 60 0, 80 -80, 140 -80" fill="none" stroke="#c084fc" stroke-width="2" class="flow-line" opacity="0.8"/>
+    <path d="M 0 0 C -50 0, -60 90, -120 90" fill="none" stroke="#34d399" stroke-width="2" class="flow-line" opacity="0.8"/>
+    <path d="M 0 0 C 50 0, 60 90, 120 90" fill="none" stroke="#38bdf8" stroke-width="2" class="flow-line-reverse" opacity="0.8"/>
+    <g class="float-up">
+      <circle cx="-140" cy="-80" r="20" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+      <circle cx="-140" cy="-80" r="6" fill="#38bdf8" filter="url(#soft-glow)"/>
+    </g>
+    <g class="float-down">
+      <circle cx="140" cy="-80" r="22" fill="#0f172a" stroke="#c084fc" stroke-width="2" />
+      <path d="M 132 -85 L 148 -85 M 132 -75 L 142 -75 M 132 -80 L 140 -80" stroke="#c084fc" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g class="float-down">
+      <rect x="-140" y="70" width="40" height="40" rx="8" fill="#0f172a" stroke="#34d399" stroke-width="2" />
+      <circle cx="-130" cy="90" r="3" fill="#34d399" />
+      <circle cx="-120" cy="90" r="3" fill="#34d399" />
+      <circle cx="-110" cy="90" r="3" fill="#34d399" />
+    </g>
+    <g class="float-up">
+      <circle cx="120" cy="90" r="20" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+      <line x1="108" y1="90" x2="132" y2="90" stroke="#38bdf8" stroke-width="2"/>
+      <line x1="108" y1="84" x2="132" y2="84" stroke="#38bdf8" stroke-width="2"/>
+      <line x1="108" y1="96" x2="132" y2="96" stroke="#38bdf8" stroke-width="2"/>
+    </g>
+    <g>
+      <circle cx="0" cy="0" r="45" fill="#0f172a" stroke="#1e293b" stroke-width="3" />
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#475569" stroke-width="1" stroke-dasharray="10 10" class="spin-outer" />
+      <circle cx="0" cy="0" r="35" fill="none" stroke="url(#accent-cyan)" stroke-width="2" stroke-dasharray="15 15" class="spin-ring" />
+      <circle cx="0" cy="0" r="15" fill="#38bdf8" filter="url(#core-glow)" opacity="0.8"/>
+      <circle cx="0" cy="0" r="8" fill="#ffffff" />
+    </g>
+  </g>
+  <g font-family="system-ui, -apple-system, sans-serif">
+    <rect x="50" y="60" width="145" height="28" rx="14" fill="#064e3b" stroke="#059669" stroke-width="1" />
+    <circle cx="68" cy="74" r="5" fill="#34d399" filter="url(#soft-glow)" class="status-pulse" />
+    <text x="82" y="78" fill="#a7f3d0" font-size="12" font-weight="600" letter-spacing="0.5">SYSTEM ACTIVE_</text>
+    <text x="48" y="145" fill="#f8fafc" font-size="56" font-weight="800" letter-spacing="-1">Birabhadra Sahoo</text>
+    <text x="50" y="190" fill="url(#accent-cyan)" font-size="20" font-weight="700" letter-spacing="1.5">AI/ML ENGINEER &amp; BACKEND ARCHITECT</text>
+    <text x="50" y="235" fill="#94a3b8" font-size="16" font-weight="400" line-height="1.5">Designing production-ready LLM pipelines and agentic workflows.</text>
+    <text x="50" y="260" fill="#94a3b8" font-size="16" font-weight="400" line-height="1.5">Building clean, scalable backend architectures for real-world impact.</text>
+    <g transform="translate(50, 310)">
+      <rect x="0" y="0" width="85" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="42.5" y="21" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="middle">Python</text>
+      <rect x="95" y="0" width="90" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="140" y="21" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="middle">Node.js</text>
+      <rect x="195" y="0" width="100" height="32" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <circle cx="212" cy="16" r="4" fill="#38bdf8" />
+      <text x="254" y="21" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="middle">AI Agents</text>
+      <rect x="305" y="0" width="135" height="32" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <circle cx="322" cy="16" r="4" fill="#c084fc" />
+      <text x="375" y="21" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="middle">System Design</text>
+      <rect x="450" y="0" width="100" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+     <text x="500" y="21" fill="#e2e8f0" font-size="13" font-weight="600" text-anchor="middle">MongoDB</text>
+    </g>
+  </g>
+</svg>
+
