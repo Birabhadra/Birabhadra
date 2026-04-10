@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="header.svg" alt="Birabhadra Sahoo Profile Header" width="100%">
+</p>
 # 💫 About Me:
 I am an AI/ML Engineer with hands-on experience in building intelligent systems using LLMs, AI agents, and scalable backend architectures. My work focuses on designing and deploying production-ready applications that combine machine learning with robust backend systems to solve real-world problems.
 
