@@ -1,6 +1,11 @@
 <p align="center">
   <img src="header.svg" alt="Birabhadra Sahoo Profile Header" width="100%">
 </p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/birabhadra-sahoo"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <img src="https://komarev.com/ghpvc/?username=Birabhadra&color=7B61FF&style=for-the-badge&label=VISITORS" alt="Profile Views" />
+</p>
 # 💫 About Me:
 
 I am an AI/ML Engineer with hands-on experience in building intelligent systems using LLMs, AI agents, and scalable backend architectures. My work focuses on designing and deploying production-ready applications that combine machine learning with robust backend systems to solve real-world problems.
