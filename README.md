@@ -4,6 +4,8 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/birabhadra-sahoo"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://leetcode.com/u/birabhadra/"><img src="https://img.shields.io/badge/LeetCode-%23FFA116.svg?style=for-the-badge&logo=leetcode&logoColor=black" /></a>
+  <a href="https://www.geeksforgeeks.org/profile/birabhadra"><img src="https://img.shields.io/badge/GeeksforGeeks-%23298D46.svg?style=for-the-badge&logo=geeksforgeeks&logoColor=white" /></a>
   <img src="https://komarev.com/ghpvc/?username=Birabhadra&color=7B61FF&style=for-the-badge&label=VISITORS" alt="Profile Views" />
 </p>
 # 💫 About Me:
@@ -14,22 +16,9 @@ I have practical experience integrating large language models into applications,
 
 I am particularly interested in developing end-to-end AI systems where intelligent decision-making, automation, and backend engineering come together to create impactful products.
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/birabhadra-sahoo) 
-
 # 💻 Tech Stack:
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,github,git,typescript,java,javascript,express,nodejs,mongodb,postgres,py,postman,vscode" />
   </a>
 </p>
-
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Birabhadra&theme=default&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Birabhadra&theme=default&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Birabhadra&theme=default&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
----
-[![](https://visitcount.itsvg.in/api?id=Birabhadra&icon=0&color=12)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
